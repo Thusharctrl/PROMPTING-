@@ -142,7 +142,26 @@ These techniques are useful when you want to **generate, transform, reverse, or 
 
 ---
 
-# 6. Combining Techniques
+# 6. Image-Creation / Visual Output Shortcuts
+
+These shortcuts are useful for asking an image-capable AI system to turn information into a particular **visual format**. They are best treated as **prompt vocabulary / workflow shortcuts**, not universal or official prompt-engineering commands.
+
+| Shortcut | Status | Purpose | Example |
+|---|---|---|---|
+| **@Create image + /cheat sheet** | ✅ Added | Turn information into a compact **visual cheat sheet/reference card**. | `@Create image /cheat sheet: Python list methods, syntax, and examples.` |
+| **@Create image + /blueprint** | ✅ Added | Turn a topic into a **structured visual blueprint/infographic** with hierarchy and sections. | `@Create image /blueprint: How a REST API works from client to database.` |
+| **@Create image + \\blackchards** | ⚠️ Added as written | Visual shortcut mentioned in your session. **“blackchards” could not be verified as a standard term**, so confirm the spelling/meaning used by your instructor. | `@Create image \\blackchards: Explain the OSI model.` |
+| **@Create image + /mindmap** | ✅ Added | Represent a topic as a **mind map**, with a central concept and connected branches. | `@Create image /mindmap: Machine Learning fundamentals.` |
+
+### Important distinction
+
+`@Create image` is the **image-generation instruction**. Terms such as `/blueprint` and `/mindmap` describe the **visual structure or format** you want. Current prompting resources document `/blueprint` used together with `@Create image`, and `/mindmap` is also used as a visual-format shortcut. citeturn941860search0turn941860search4
+
+Do not treat every slash word as a hidden ChatGPT command. Some are simply shorthand that helps communicate the desired output format. A recent 2026 reference explicitly describes these kinds of “cheat codes” as prompt vocabulary/community shorthand rather than secret functionality. citeturn686744search5
+
+---
+
+# 7. Combining Techniques
 
 The real power comes from **combining multiple prompting techniques**.
 
@@ -179,7 +198,7 @@ This combines:
 
 ---
 
-# 7. Creative Workflow
+# 8. Creative Workflow
 
 A useful workflow for idea generation is:
 
@@ -223,7 +242,7 @@ Idea:
 
 ---
 
-# 8. Example of a Full Multi-Technique Prompt
+# 9. Example of a Full Multi-Technique Prompt
 
 ```text
 Act as an experienced AI mentor.
@@ -251,7 +270,7 @@ This is more precise because it specifies:
 
 ---
 
-# 9. Ultra-Quick Cheat Sheet
+# 10. Ultra-Quick Cheat Sheet
 
 ```text
 ZERO-SHOT       → No example
@@ -285,13 +304,21 @@ REMIX           → Transform/recombine
 REVERSE         → Flip the usual approach
 BRAINSTORM      → Generate many ideas
 DEVIL'S ADVOCATE→ Challenge the idea
+
+IMAGE / VISUAL SHORTCUTS
+@CREATE IMAGE /CHEAT SHEET → Visual reference/cheat sheet
+@CREATE IMAGE /BLUEPRINT   → Structured visual blueprint
+@CREATE IMAGE \\BLACKCHARDS → Session-specific term; verify spelling/meaning*
+@CREATE IMAGE /MINDMAP    → Visual mind map
 ```
 
 > `* T-TR is included as it was discussed in your session; confirm your instructor's exact definition because it is not a universally standardized prompting term.`
 
+> `** The README preserves “blackchards” exactly as you wrote it. I could not verify it as a standard prompting term; check whether your instructor meant a different spelling.`
+
 ---
 
-## 10. The Core Idea
+## 11. The Core Idea
 
 Prompt engineering is largely about controlling four things:
 
